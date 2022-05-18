@@ -80,8 +80,11 @@
 				"typeProperties": {
 					"scripts": [
 						{
-							"type": "Query",
-							"text": "SELECT 1"
+							"type": {
+								"value": "@variables('DDL')",
+								"type": "Expression"
+							},
+							"text": ""
 						}
 					]
 				}
