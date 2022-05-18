@@ -98,7 +98,7 @@
 				},
 				"variables": {
 					"DDL": {
-						"type": "String"
+						"type": "Array"
 					}
 				},
 				"annotations": []
