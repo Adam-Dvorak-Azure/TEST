@@ -5,13 +5,16 @@
 		"workspaceName": {
 			"value": "dpi30-test-eus-syn-01\\"
 		},
+		"AdamDvorakDB_connectionString": {
+			"value": ""
+		},
 		"Db21_connectionString": {
 			"value": ""
 		},
 		"dpi30-test-eus-syn-01-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"AdamDvorakDB_connectionString": {
+		"dpi30testeusdlsacz03_blob_connectionString": {
 			"value": ""
 		},
 		"dpi30-test-eus-syn-01-WorkspaceDefaultStorage_properties_typeProperties_url": {
