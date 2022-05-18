@@ -1,5 +1,5 @@
 {
-	"name": "RUN_SQL_FROM_FILE",
+	"name": "RUN_SQL_FROM_FILE_copy2",
 	"properties": {
 		"activities": [
 			{
@@ -35,31 +35,11 @@
 				}
 			},
 			{
-				"name": "Set variable1",
-				"type": "SetVariable",
-				"dependsOn": [
-					{
-						"activity": "GET_FILE_CONTENT",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "QUERY",
-					"value": {
-						"value": "@string(activity('GET_FILE_CONTENT').output.value[0].Prop_0)",
-						"type": "Expression"
-					}
-				}
-			},
-			{
 				"name": "Script1",
 				"type": "Script",
 				"dependsOn": [
 					{
-						"activity": "Set variable1",
+						"activity": "GET_FILE_CONTENT",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -82,7 +62,7 @@
 						{
 							"type": "NonQuery",
 							"text": {
-								"value": "@variables('QUERY')",
+								"value": "@string(activity('GET_FILE_CONTENT').output.value[0].Prop_0)",
 								"type": "Expression"
 							}
 						}
