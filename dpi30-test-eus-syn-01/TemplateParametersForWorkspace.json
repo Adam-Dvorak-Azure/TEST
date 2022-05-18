@@ -5,173 +5,23 @@
 		"workspaceName": {
 			"value": "dpi30-test-eus-syn-01\\"
 		},
-		"dpi30-test-eus-syn-01-WorkspaceDefaultSqlServer_connectionString": {
-			"value": ""
-		},
-		"RawZone_DataLakeStorage1_accountKey": {
-			"value": ""
-		},
-		"EnhancedZone_DataLakeStorage2_accountKey": {
-			"value": ""
-		},
-		"CuratedZone_DataLakeStorage3_accountKey": {
-			"value": ""
-		},
-		"Marketo1_clientSecret": {
-			"value": ""
-		},
-		"AzureBlobStorage1_connectionString": {
-			"value": ""
-		},
-		"AzureSynapseAnalytics1_connectionString": {
-			"value": ""
-		},
-		"AzureBlobStorage2_Test_connectionString": {
-			"value": ""
-		},
-		"AzureDataLakeStorage1_Test_accountKey": {
+		"AdamDvorakDB_connectionString": {
 			"value": ""
 		},
 		"Db21_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorageDatamonksTest_accountKey": {
-			"value": ""
-		},
-		"DatamonksS3DevPvc_secretAccessKey": {
-			"value": ""
-		},
-		"Azuretestblobstorage_servicePrincipalKey": {
-			"value": ""
-		},
-		"test_sa_container_servicePrincipalCredential": {
-			"value": ""
-		},
-		"TkgenMonksTest_password": {
-			"value": ""
-		},
-		"ON_ODB2_connectionString": {
-			"value": ""
-		},
-		"Db22_connectionString": {
-			"value": ""
-		},
-		"DB2 TEST_connectionString": {
-			"value": ""
-		},
-		"GitHub1_credential": {
-			"value": ""
-		},
-		"NvdBlob_connectionString": {
-			"value": ""
-		},
-		"Connection to catalyst_connectionString": {
-			"value": ""
-		},
-		"TRAILS_connectionString": {
-			"value": ""
-		},
-		"bludb_jdbc_connection_connectionString": {
-			"value": ""
-		},
-		"AzureFunction1_functionKey": {
-			"value": ""
-		},
-		"MedalliaData_Zoran_accountKey": {
-			"value": ""
-		},
-		"MedalliaDataCZ_Zoran_accountKey": {
-			"value": ""
-		},
-		"AdamDvorakDB_connectionString": {
-			"value": ""
-		},
-		"dpi30testeusdlsacz03_connectionString": {
+		"dpi30-test-eus-syn-01-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
 		"dpi30testeusdlsacz03_blob_connectionString": {
 			"value": ""
 		},
+		"GITRest_properties_typeProperties_url": {
+			"value": "https://api.github.com/"
+		},
 		"dpi30-test-eus-syn-01-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://dpi30testeusdlsarz01.dfs.core.windows.net"
-		},
-		"RawZone_DataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://dpi30testeusdlsarz01.dfs.core.windows.net"
-		},
-		"EnhancedZone_DataLakeStorage2_properties_typeProperties_url": {
-			"value": "https://dpi30testeusdlsaez02.dfs.core.windows.net"
-		},
-		"CuratedZone_DataLakeStorage3_properties_typeProperties_url": {
-			"value": "https://dpi30testeusdlsacz03.dfs.core.windows.net"
-		},
-		"Mockaroo_Users_properties_typeProperties_url": {
-			"value": "https://my.api.mockaroo.com/users.json?key=c72d8e90"
-		},
-		"Marketo1_properties_typeProperties_clientId": {
-			"value": "a8c1348b-d3a0-456f-beb4-0d00ab88d8d8"
-		},
-		"AzureDataLakeStorage1_Test_properties_typeProperties_url": {
-			"value": "https://dpi30testeusdlsarz01.dfs.core.windows.net/"
-		},
-		"AzureDataLakeStorageDatamonksTest_properties_typeProperties_url": {
-			"value": "https://dpi30testeusdlsarz01.dfs.core.windows.net"
-		},
-		"DatamonksS3DevPvc_properties_typeProperties_accessKeyId": {
-			"value": "04a0d7c5f2d9481a84cee7078fbe4599"
-		},
-		"Azuretestblobstorage_properties_typeProperties_serviceEndpoint": {
-			"value": "https://dpi30testeusdlsatest02.blob.core.windows.net"
-		},
-		"Azuretestblobstorage_properties_typeProperties_tenant": {
-			"value": "d1c719f7-cc48-4f9f-83ec-f706a2a940fe"
-		},
-		"Azuretestblobstorage_properties_typeProperties_servicePrincipalId": {
-			"value": "ff031354-9bb6-43f7-9487-e62da4d3bbd6"
-		},
-		"test_sa_container_properties_typeProperties_url": {
-			"value": "https://dpi30testeusdlsatest02.dfs.core.windows.net"
-		},
-		"test_sa_container_properties_typeProperties_tenant": {
-			"value": "d1c719f7-cc48-4f9f-83ec-f706a2a940fe"
-		},
-		"test_sa_container_properties_typeProperties_servicePrincipalId": {
-			"value": "ff031354-9bb6-43f7-9487-e62da4d3bbd6"
-		},
-		"TkgenMonksTest_properties_typeProperties_url": {
-			"value": "https://k8s-pricing-dev-a19fe168445bd781eeb95cecb0df6e59-0000.us-south.containers.appdomain.cloud/generateToken"
-		},
-		"TkgenMonksTest_properties_typeProperties_userName": {
-			"value": "Sreepada.Jayanthi@kyndryl.com"
-		},
-		"bing-covid-19-data_sasUri": {
-			"value": ""
-		},
-		"RestService1_properties_typeProperties_url": {
-			"value": "http://worldtimeapi.org/api/timezone/asia/Kolkata"
-		},
-		"AMETLAPI_properties_typeProperties_url": {
-			"value": "https://158.87.52.49:9081/api/sam/about"
-		},
-		"GitHub1_properties_typeProperties_username": {
-			"value": "sachins301"
-		},
-		"AzureFunction1_properties_typeProperties_functionAppUrl": {
-			"value": "https://michal-test-app.azurewebsites.net"
-		},
-		"MedalliaData_Zoran_properties_typeProperties_url": {
-			"value": "https://dpi30testeusdlsarz01.dfs.core.windows.net"
-		},
-		"MedalliaDataCZ_Zoran_properties_typeProperties_url": {
-			"value": "https://dpi30testeusdlsarz01.dfs.core.windows.net"
-		},
-		"AzureMLService1_properties_typeProperties_subscriptionId": {
-			"value": "a802af10-3082-4ea6-b3db-542043a41e96"
-		},
-		"AzureMLService1_properties_typeProperties_resourceGroupName": {
-			"value": "rg-dpi30-test-eus-001"
-		},
-		"AzureKeyVaultMonks_properties_typeProperties_baseUrl": {
-			"value": "https://dpi30-test-eus-kv-01.vault.azure.net/"
 		}
 	}
 }
