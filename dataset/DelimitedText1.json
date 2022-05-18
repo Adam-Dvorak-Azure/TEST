@@ -12,15 +12,11 @@
 				"type": "AzureBlobStorageLocation",
 				"container": "test"
 			},
-			"columnDelimiter": "\u0001",
+			"columnDelimiter": "",
 			"escapeChar": "",
 			"firstRowAsHeader": false,
 			"quoteChar": ""
 		},
-		"schema": [
-			{
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
