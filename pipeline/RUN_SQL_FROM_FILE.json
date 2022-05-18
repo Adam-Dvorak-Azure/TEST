@@ -1,9 +1,9 @@
 {
-	"name": "GET_FILE_CONTENT_LOOKUP",
+	"name": "RUN_SQL_FROM_FILE",
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "GET_FILE_CONTENT",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -35,11 +35,11 @@
 				}
 			},
 			{
-				"name": "Script1",
+				"name": "EXECUTE",
 				"type": "Script",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "GET_FILE_CONTENT",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -61,7 +61,7 @@
 					"scripts": [
 						{
 							"type": {
-								"value": "@activity('Lookup1').output",
+								"value": "@activity('GET_FILE_CONTENT').output",
 								"type": "Expression"
 							}
 						}
