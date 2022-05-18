@@ -35,8 +35,8 @@
 				}
 			},
 			{
-				"name": "EXECUTE",
-				"type": "Script",
+				"name": "Set variable1",
+				"type": "SetVariable",
 				"dependsOn": [
 					{
 						"activity": "GET_FILE_CONTENT",
@@ -45,27 +45,13 @@
 						]
 					}
 				],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
 				"userProperties": [],
-				"linkedServiceName": {
-					"referenceName": "AdamDvorakDB",
-					"type": "LinkedServiceReference"
-				},
 				"typeProperties": {
-					"scripts": [
-						{
-							"type": {
-								"value": "@activity('GET_FILE_CONTENT').output",
-								"type": "Expression"
-							}
-						}
-					]
+					"variableName": "DDL",
+					"value": {
+						"value": "@activity('GET_FILE_CONTENT').output.value",
+						"type": "Expression"
+					}
 				}
 			}
 		],
