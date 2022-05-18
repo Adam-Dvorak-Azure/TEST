@@ -1,5 +1,5 @@
 {
-	"name": "RUN_SQL_FROM_FILE_copy2",
+	"name": "RUN_SQL_FROM_FILE_NO_VAR_SET",
 	"properties": {
 		"activities": [
 			{
