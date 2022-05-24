@@ -1,5 +1,5 @@
 {
-	"name": "RUN_SQL_FROM_FILE_NO_VAR_SET_GIT",
+	"name": "RUN_SQL_FROM_FILE_BLOB",
 	"properties": {
 		"activities": [
 			{
@@ -35,7 +35,7 @@
 						}
 					},
 					"dataset": {
-						"referenceName": "DelimitedText1",
+						"referenceName": "NoDelimeterFileAzureBlobStorageMain",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
@@ -87,7 +87,7 @@
 			},
 			"FILE_NAME": {
 				"type": "string",
-				"defaultValue": "EXTDDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE.csv"
+				"defaultValue": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE_.csv"
 			},
 			"SQL_TYPE": {
 				"type": "string",
@@ -98,6 +98,9 @@
 			"QUERY": {
 				"type": "String"
 			}
+		},
+		"folder": {
+			"name": "Adam"
 		},
 		"annotations": [],
 		"lastPublishTime": "2022-05-18T15:52:14Z"
