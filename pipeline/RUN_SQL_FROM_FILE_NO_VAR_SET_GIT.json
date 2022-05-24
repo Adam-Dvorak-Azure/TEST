@@ -20,7 +20,14 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": "NOHY.SQL",
+							"wildcardFolderPath": {
+								"value": "@pipeline().parameters.FILE_FOLDER",
+								"type": "Expression"
+							},
+							"wildcardFileName": {
+								"value": "@pipeline().parameters.FILE_NAME",
+								"type": "Expression"
+							},
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -35,7 +42,7 @@
 				}
 			},
 			{
-				"name": "Script1",
+				"name": "SQLExecute",
 				"type": "Script",
 				"dependsOn": [
 					{
@@ -60,7 +67,10 @@
 				"typeProperties": {
 					"scripts": [
 						{
-							"type": "NonQuery",
+							"type": {
+								"value": "@pipeline().parameters.SQL_TYPE",
+								"type": "Expression"
+							},
 							"text": {
 								"value": "@string(activity('GET_FILE_CONTENT').output.value[0].Prop_0)",
 								"type": "Expression"
@@ -70,10 +80,25 @@
 				}
 			}
 		],
-		"variables": {
-			"DDL": {
-				"type": "Array"
+		"parameters": {
+			"FILE_FOLDER": {
+				"type": "string",
+				"defaultValue": "DDL"
 			},
+			"FILE_NAME": {
+				"type": "string",
+				"defaultValue": "EXTDDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE.csv"
+			},
+			"SQL_TYPE": {
+				"type": "string",
+				"defaultValue": "NonQuery"
+			},
+			"CONTAINER": {
+				"type": "string",
+				"defaultValue": "bigsqltrails"
+			}
+		},
+		"variables": {
 			"QUERY": {
 				"type": "String"
 			}
