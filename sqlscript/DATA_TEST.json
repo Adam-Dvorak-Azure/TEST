@@ -2,7 +2,7 @@
 	"name": "DATA_TEST",
 	"properties": {
 		"content": {
-			"query": "",
+			"query": "SELECT 1",
 			"metadata": {
 				"language": "sql"
 			},
