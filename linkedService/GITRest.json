@@ -1,5 +1,6 @@
 {
 	"name": "GITRest",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "RestService",

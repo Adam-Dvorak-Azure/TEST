@@ -1,0 +1,173 @@
+{
+	"name": "CatalystCopyPipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_ai8",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "."
+					},
+					{
+						"name": "Destination",
+						"value": "catalyst-raw/rev-cost/"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "PostgreSqlSource",
+						"query": "select \r\ncase when ade.category ='LMA' then 'LMA'\r\nwhen ade.account_code like ('PFA_ACC') then 'Proforma adjustment'\r\nelse 'TAW'\r\nend as type, ade.geo_nm, ade.market_name, ade.client_unit_nm, ade.account_nm, ade.account_code, ade.managing_partner_nm, ade.global_account_nm, ade.contract_number, \r\nade.legal_contract_num, ade.gbg_id, agm.glbl_buy_group_nm, offer.practices, offer.ais, year, quarter, month, sum(revenue)as revenue, sum(cost)as cost, sum(gp)as gp\r\nfrom raw.actuals_details_export ade\r\nleft outer join catalyst.offering offer on ade.offering_code=offer.id\r\nleft outer join catalyst.account_gbg_mapping agm on (ade.gbg_id=agm.glbl_buy_group_id and ade.country_number=agm.ctry_cd)\r\nwhere year=2021 and geo_nm='Germany'\r\ngroup by 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"validateDataConsistency": false
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_ai8",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_ai8",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Copy_ai8",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "PostgreSqlSource",
+						"query": "select * from (\nselect 'certified backlog' as type, bu.geo_nm, bu.market_acts_nm as market_name, bu.client_unit_nm, bu.account_nm, account as account_code, bu.managing_partner_nm, bu.global_account_nm, contract_num,\ngbg as gbg_id, agm.glbl_buy_group_nm, offer.practices, offer.ais, year, quarter_n as quarter, month,\nsum (case when quarter_n=1 then q1_ver\nwhen quarter_n=2 then q2_ver\nwhen quarter_n=3 then q3_ver\nwhen quarter_n=4 then q4_ver\nend) as certified_backlog\nfrom raw.wsb_bklg_final qbb\nleft outer join catalyst.business_unit bu on qbb.account = bu.account_cd\nleft outer join catalyst.offering offer on qbb.offerings=offer.id\nleft outer join catalyst.account_gbg_mapping agm on (qbb.gbg=agm.glbl_buy_group_id and qbb.country_cd=agm.ctry_cd)\n\twhere geo_nm ='Germany'\ngroup by 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16\n)a where certified_backlog<>0"
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_ai8",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "CertifiedBacklog",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Copy data2",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "PostgreSqlSource",
+						"query": "select 'signings' as type, bu.geo_nm, bu.market_acts_nm as market_name, bu.client_unit_nm, bu.account_nm, account as account_code, bu.managing_partner_nm, bu.global_account_nm, contract_num,\ngbg as gbg_id, agm.glbl_buy_group_nm, offer.practices, offer.ais, year_num as year, quarter_num as quarter, month,\nsum (value) as signings\nfrom raw.wsb_signings_final sign\nleft outer join catalyst.business_unit bu on sign.account = bu.account_cd\nleft outer join catalyst.offering offer on sign.offerings=offer.id\nleft outer join catalyst.account_gbg_mapping agm on (sign.gbg=agm.glbl_buy_group_id and sign.country_cd=agm.ctry_cd)\n\twhere geo_nm ='Germany' and value<>0\ngroup by 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_ai8",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Signings",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-04-27T16:08:47Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}
