@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "NoDelimeterFileAzureBlobStorageMain",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "dpi30testeusdlsacz03_blob",
