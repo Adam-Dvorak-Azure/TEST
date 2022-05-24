@@ -83,7 +83,7 @@
 		"parameters": {
 			"FILE_FOLDER": {
 				"type": "string",
-				"defaultValue": "DDL"
+				"defaultValue": "bigsqltrails/DDL"
 			},
 			"FILE_NAME": {
 				"type": "string",
@@ -92,10 +92,6 @@
 			"SQL_TYPE": {
 				"type": "string",
 				"defaultValue": "NonQuery"
-			},
-			"CONTAINER": {
-				"type": "string",
-				"defaultValue": "bigsqltrails"
 			}
 		},
 		"variables": {
