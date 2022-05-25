@@ -1,0 +1,38 @@
+{
+	"name": "Pipeline 1",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"activities": [
+						{
+							"name": "RUN_SQL_FROM_FILE_BLOB",
+							"type": "ExecutePipeline",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"pipeline": {
+									"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+									"type": "PipelineReference"
+								},
+								"waitOnCompletion": true,
+								"parameters": {
+									"FILE_FOLDER": "bigsqltrails/DDL",
+									"FILE_NAME": "BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_VM_PRODUCT.csv"
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"folder": {
+			"name": "Adam"
+		},
+		"annotations": []
+	}
+}
