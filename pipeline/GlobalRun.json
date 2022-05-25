@@ -3,30 +3,1244 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "ForEach1",
-				"type": "ForEach",
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_VM_PRODUCT",
+				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"activities": [
-						{
-							"name": "RUN_SQL_FROM_FILE_BLOB",
-							"type": "ExecutePipeline",
-							"dependsOn": [],
-							"userProperties": [],
-							"typeProperties": {
-								"pipeline": {
-									"referenceName": "RUN_SQL_FROM_FILE_BLOB",
-									"type": "PipelineReference"
-								},
-								"waitOnCompletion": true,
-								"parameters": {
-									"FILE_FOLDER": "bigsqltrails/DDL",
-									"FILE_NAME": "BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_VM_PRODUCT.csv"
-								}
-							}
-						}
-					]
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_VM_PRODUCT.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_LICENSE_AGREEMENT_TYPE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_LICENSE_AGREEMENT_TYPE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_STATUS",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_STATUS.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE_RESPONSIBILITY",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE_RESPONSIBILITY.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOURCE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOURCE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_DISCREPANCY_TYPE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_DISCREPANCY_TYPE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SCOPE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SCOPE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_IBM_BRAND",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_IBM_BRAND.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALLOCATION_METHODOLOGY",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALLOCATION_METHODOLOGY.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_TYPE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_TYPE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_RECONCILE_TYPE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_RECONCILE_TYPE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PVU",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_PVU.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PRIORITY_ISV_SW",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_PRIORITY_ISV_SW.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_LICENSE_TYPE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_LICENSE_TYPE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PVU_INFO",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_PVU_INFO.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_SA_PRODUCT",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_SA_PRODUCT.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_TYPE_CAUSE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_TYPE_CAUSE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_SCRIPT",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_SCRIPT.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CAPACITY_TYPE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_CAPACITY_TYPE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_CATEGORY",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_CATEGORY.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_REPORT_DELIVERY_TRACKING",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_REPORT_DELIVERY_TRACKING.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ACCOUNT_POOL",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ACCOUNT_POOL.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MACHINE_TYPE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_MACHINE_TYPE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SCARLET_RECONCILE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SCARLET_RECONCILE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MQT_OP_METRICS_SWLM",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_MQT_OP_METRICS_SWLM.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SA_PRODUCT",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SA_PRODUCT.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_BANK_ACCOUNT",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_BANK_ACCOUNT.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MAINFRAME_VERSION",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_MAINFRAME_VERSION.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MAINFRAME_FEATURE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_MAINFRAME_FEATURE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PID",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_PID.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PVU_MAP",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_PVU_MAP.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MANUFACTURER",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_MANUFACTURER.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_BANK_ACCOUNT_INCLUSION",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_BANK_ACCOUNT_INCLUSION.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CUSTOMER_NEW",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_CUSTOMER_NEW.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CONFIG_RECORD_HARDWARE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_CONFIG_RECORD_HARDWARE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_USED_LICENSE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_USED_LICENSE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_ITEM_PID",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_ITEM_PID.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_RECONCILE_USED_LICENSE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_RECONCILE_USED_LICENSE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_SCRIPT",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_SCRIPT.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PRODUCT",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_PRODUCT.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PRODUCT_INFO",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_PRODUCT_INFO.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_FILTER",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_FILTER.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_SIGNATURE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_SIGNATURE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_ITEM",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_ITEM.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CONFIG_RECORD_HARDWARE_LPAR",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_CONFIG_RECORD_HARDWARE_LPAR.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_HARDWARE_CFGDATA",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_HARDWARE_CFGDATA.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_HW_SW_COMPOSITE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_HW_SW_COMPOSITE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_KB_DEFINITION",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_KB_DEFINITION.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_TADZ",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_TADZ.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR_EFF",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR_EFF.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_HARDWARE_LPAR_EFF",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_HARDWARE_LPAR_EFF.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_LICENSE_SW_MAP",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_LICENSE_SW_MAP.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_V_LPAR_BANK_ACCOUNT",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_V_LPAR_BANK_ACCOUNT.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_EXPIRED_SCAN",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_EXPIRED_SCAN.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_LICENSE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_LICENSE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SCHEDULE_F",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SCHEDULE_F.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_RECONCILE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_RECONCILE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_HARDWARE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_HARDWARE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_FULL_RECON",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_FULL_RECON.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR_PROCESSOR",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR_PROCESSOR.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_HW_LPAR",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_HW_LPAR.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_SW_LPAR",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_SW_LPAR.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_HARDWARE_LPAR",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_HARDWARE_LPAR.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_HARDWARE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_HARDWARE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_UNLICENSED_SW",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_ALERT_UNLICENSED_SW.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_SIGNATURE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_SIGNATURE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_DM_TRAILS_SCHEDULE_F_CUSTOM",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_DM_TRAILS_SCHEDULE_F_CUSTOM.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_FILTER",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_FILTER.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_SOFTWARE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_INSTALLED_SOFTWARE.csv"
+					}
+				}
+			},
+			{
+				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CAUSE_CODE",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "RUN_SQL_FROM_FILE_BLOB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"FILE_FOLDER": "bigsqltrails/DDL",
+						"FILE_NAME": "EXT_DDL_BIGSQL_TRAILS_TRAILS_EAADMIN_CAUSE_CODE.csv"
+					}
 				}
 			}
 		],
