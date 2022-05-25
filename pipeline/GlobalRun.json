@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_VM_PRODUCT",
+				"name": "TRAILS_TRAILS_EAADMIN_INSTALLED_VM_PRODUCT",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -20,7 +20,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_LICENSE_AGREEMENT_TYPE",
+				"name": "TRAILS_TRAILS_EAADMIN_LICENSE_AGREEMENT_TYPE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -37,7 +37,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_STATUS",
+				"name": "TRAILS_TRAILS_EAADMIN_STATUS",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -54,7 +54,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE_RESPONSIBILITY",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_CAUSE_RESPONSIBILITY",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -71,7 +71,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOURCE",
+				"name": "TRAILS_TRAILS_EAADMIN_SOURCE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -88,7 +88,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_DISCREPANCY_TYPE",
+				"name": "TRAILS_TRAILS_EAADMIN_DISCREPANCY_TYPE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -105,7 +105,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SCOPE",
+				"name": "TRAILS_TRAILS_EAADMIN_SCOPE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -122,7 +122,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_IBM_BRAND",
+				"name": "TRAILS_TRAILS_EAADMIN_IBM_BRAND",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -139,7 +139,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALLOCATION_METHODOLOGY",
+				"name": "TRAILS_TRAILS_EAADMIN_ALLOCATION_METHODOLOGY",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -156,7 +156,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_TYPE",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_TYPE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -173,7 +173,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_RECONCILE_TYPE",
+				"name": "TRAILS_TRAILS_EAADMIN_RECONCILE_TYPE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -190,7 +190,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PVU",
+				"name": "TRAILS_TRAILS_EAADMIN_PVU",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -207,7 +207,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PRIORITY_ISV_SW",
+				"name": "TRAILS_TRAILS_EAADMIN_PRIORITY_ISV_SW",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -224,7 +224,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_LICENSE_TYPE",
+				"name": "TRAILS_TRAILS_EAADMIN_LICENSE_TYPE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -241,7 +241,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PVU_INFO",
+				"name": "TRAILS_TRAILS_EAADMIN_PVU_INFO",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -258,7 +258,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_SA_PRODUCT",
+				"name": "TRAILS_TRAILS_EAADMIN_INSTALLED_SA_PRODUCT",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -275,7 +275,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_CAUSE",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_CAUSE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -292,7 +292,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_TYPE_CAUSE",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_TYPE_CAUSE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -309,7 +309,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_SCRIPT",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_SCRIPT",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -326,7 +326,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CAPACITY_TYPE",
+				"name": "TRAILS_TRAILS_EAADMIN_CAPACITY_TYPE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -343,7 +343,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_CATEGORY",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_CATEGORY",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -360,7 +360,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_REPORT_DELIVERY_TRACKING",
+				"name": "TRAILS_TRAILS_EAADMIN_REPORT_DELIVERY_TRACKING",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -377,7 +377,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ACCOUNT_POOL",
+				"name": "TRAILS_TRAILS_EAADMIN_ACCOUNT_POOL",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -394,7 +394,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MACHINE_TYPE",
+				"name": "TRAILS_TRAILS_EAADMIN_MACHINE_TYPE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -411,7 +411,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SCARLET_RECONCILE",
+				"name": "TRAILS_TRAILS_EAADMIN_SCARLET_RECONCILE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -428,7 +428,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MQT_OP_METRICS_SWLM",
+				"name": "TRAILS_TRAILS_EAADMIN_MQT_OP_METRICS_SWLM",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -445,7 +445,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SA_PRODUCT",
+				"name": "TRAILS_TRAILS_EAADMIN_SA_PRODUCT",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -462,7 +462,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_BANK_ACCOUNT",
+				"name": "TRAILS_TRAILS_EAADMIN_BANK_ACCOUNT",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -479,7 +479,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MAINFRAME_VERSION",
+				"name": "TRAILS_TRAILS_EAADMIN_MAINFRAME_VERSION",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -496,7 +496,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MAINFRAME_FEATURE",
+				"name": "TRAILS_TRAILS_EAADMIN_MAINFRAME_FEATURE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -513,7 +513,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PID",
+				"name": "TRAILS_TRAILS_EAADMIN_PID",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -530,7 +530,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PVU_MAP",
+				"name": "TRAILS_TRAILS_EAADMIN_PVU_MAP",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -547,7 +547,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_MANUFACTURER",
+				"name": "TRAILS_TRAILS_EAADMIN_MANUFACTURER",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -564,7 +564,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_BANK_ACCOUNT_INCLUSION",
+				"name": "TRAILS_TRAILS_EAADMIN_BANK_ACCOUNT_INCLUSION",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -581,7 +581,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CUSTOMER_NEW",
+				"name": "TRAILS_TRAILS_EAADMIN_CUSTOMER_NEW",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -598,7 +598,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CONFIG_RECORD_HARDWARE",
+				"name": "TRAILS_TRAILS_EAADMIN_CONFIG_RECORD_HARDWARE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -615,7 +615,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_USED_LICENSE",
+				"name": "TRAILS_TRAILS_EAADMIN_USED_LICENSE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -632,7 +632,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_ITEM_PID",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_ITEM_PID",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -649,7 +649,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_RECONCILE_USED_LICENSE",
+				"name": "TRAILS_TRAILS_EAADMIN_RECONCILE_USED_LICENSE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -666,7 +666,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_SCRIPT",
+				"name": "TRAILS_TRAILS_EAADMIN_INSTALLED_SCRIPT",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -683,7 +683,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PRODUCT",
+				"name": "TRAILS_TRAILS_EAADMIN_PRODUCT",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -700,7 +700,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_PRODUCT_INFO",
+				"name": "TRAILS_TRAILS_EAADMIN_PRODUCT_INFO",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -717,7 +717,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -734,7 +734,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_FILTER",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_FILTER",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -751,7 +751,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_SIGNATURE",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_SIGNATURE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -768,7 +768,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_ITEM",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_ITEM",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -785,7 +785,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CONFIG_RECORD_HARDWARE_LPAR",
+				"name": "TRAILS_TRAILS_EAADMIN_CONFIG_RECORD_HARDWARE_LPAR",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -802,7 +802,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_HARDWARE_CFGDATA",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_HARDWARE_CFGDATA",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -819,7 +819,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_HW_SW_COMPOSITE",
+				"name": "TRAILS_TRAILS_EAADMIN_HW_SW_COMPOSITE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -836,7 +836,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_KB_DEFINITION",
+				"name": "TRAILS_TRAILS_EAADMIN_KB_DEFINITION",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -853,7 +853,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_TADZ",
+				"name": "TRAILS_TRAILS_EAADMIN_INSTALLED_TADZ",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -870,7 +870,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR_EFF",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR_EFF",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -887,7 +887,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_HARDWARE_LPAR_EFF",
+				"name": "TRAILS_TRAILS_EAADMIN_HARDWARE_LPAR_EFF",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -904,7 +904,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_LICENSE_SW_MAP",
+				"name": "TRAILS_TRAILS_EAADMIN_LICENSE_SW_MAP",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -921,7 +921,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_V_LPAR_BANK_ACCOUNT",
+				"name": "TRAILS_TRAILS_EAADMIN_V_LPAR_BANK_ACCOUNT",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -938,7 +938,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_EXPIRED_SCAN",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_EXPIRED_SCAN",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -955,7 +955,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_LICENSE",
+				"name": "TRAILS_TRAILS_EAADMIN_LICENSE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -972,7 +972,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SCHEDULE_F",
+				"name": "TRAILS_TRAILS_EAADMIN_SCHEDULE_F",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -989,7 +989,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_RECONCILE",
+				"name": "TRAILS_TRAILS_EAADMIN_RECONCILE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1006,7 +1006,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_HARDWARE",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_HARDWARE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1023,7 +1023,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_FULL_RECON",
+				"name": "TRAILS_TRAILS_EAADMIN_FULL_RECON",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1040,7 +1040,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR_PROCESSOR",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR_PROCESSOR",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1057,7 +1057,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_HW_LPAR",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_HW_LPAR",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1074,7 +1074,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_SW_LPAR",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_SW_LPAR",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1091,7 +1091,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_HARDWARE_LPAR",
+				"name": "TRAILS_TRAILS_EAADMIN_HARDWARE_LPAR",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1108,7 +1108,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_HARDWARE",
+				"name": "TRAILS_TRAILS_EAADMIN_HARDWARE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1125,7 +1125,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR",
+				"name": "TRAILS_TRAILS_EAADMIN_SOFTWARE_LPAR",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1142,7 +1142,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_ALERT_UNLICENSED_SW",
+				"name": "TRAILS_TRAILS_EAADMIN_ALERT_UNLICENSED_SW",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1159,7 +1159,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_SIGNATURE",
+				"name": "TRAILS_TRAILS_EAADMIN_INSTALLED_SIGNATURE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1176,7 +1176,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_DM_TRAILS_SCHEDULE_F_CUSTOM",
+				"name": "TRAILS_TRAILS_DM_TRAILS_SCHEDULE_F_CUSTOM",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1193,7 +1193,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_FILTER",
+				"name": "TRAILS_TRAILS_EAADMIN_INSTALLED_FILTER",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1210,7 +1210,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_INSTALLED_SOFTWARE",
+				"name": "TRAILS_TRAILS_EAADMIN_INSTALLED_SOFTWARE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
@@ -1227,7 +1227,7 @@
 				}
 			},
 			{
-				"name": "EXT_DDL_TRAILS_TRAILS_EAADMIN_CAUSE_CODE",
+				"name": "TRAILS_TRAILS_EAADMIN_CAUSE_CODE",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"userProperties": [],
