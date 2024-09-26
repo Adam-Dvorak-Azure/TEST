@@ -1,0 +1,13 @@
+{
+	"name": "SourceDataset_ai8",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Connection to catalyst",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "PostgreSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
